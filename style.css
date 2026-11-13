@@ -67,11 +67,10 @@ h3{font-size:17px;font-weight:700;margin:22px 4px 10px}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"›";color:var(--gray2);font-size:20px;font-weight:400}
 .faq p{color:var(--gray);font-size:15px;margin-top:8px}
-/* Paj peman */
-.pay-logo{background:#fff;border-radius:20px;padding:0;overflow:hidden;text-align:center}
-.pay-logo img{width:100%;height:auto;display:block}
-.pay-logo .wordmark{font-size:44px;font-weight:800;color:#e4002b;letter-spacing:-1px}
-.pay-logo .wordmark small{display:block;font-size:14px;color:#666;font-weight:600;letter-spacing:2px;margin-top:4px}
+/* Peman — MonCash (san logo imaj, menm stil ak Binance) */
+.moncash-card{background:var(--card);border-radius:20px;padding:24px 20px;text-align:center;border:1px solid rgba(228,0,43,.35)}
+.moncash-logo{font-size:30px;font-weight:800;color:#ff2e4d;letter-spacing:-1px}
+.moncash-logo small{display:block;font-size:13px;color:var(--gray);font-weight:600;letter-spacing:3px;margin-top:4px}
 .pay-num{font-size:26px;font-weight:700;letter-spacing:.5px;text-align:center;margin:16px 0 6px}
 /* Tab bar iOS (anba) */
 .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(28,28,30,.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid rgba(255,255,255,.12)}
