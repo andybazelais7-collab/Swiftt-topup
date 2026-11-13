@@ -80,3 +80,10 @@ h3{font-size:17px;font-weight:700;margin:22px 4px 10px}
 .tabbar a.active{color:var(--blue)}
 footer{padding:30px 0 20px;text-align:center;color:var(--gray2);font-size:13px;line-height:1.6}
 footer b{color:var(--gray)}
+/* Netlify mete yon badj "Powered by Netlify" anba adwat sou telefòn —
+   li kouvri 2 dènye onglè tab bar la. Sou ti ekran, tab bar la monte
+   pi wo pase badj la pou tout 5 onglè yo rete klikab. */
+@media(max-width:1100px){
+  .tabbar{bottom:40px}
+  body{padding-bottom:128px}
+}

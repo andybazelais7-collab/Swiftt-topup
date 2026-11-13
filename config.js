@@ -10,6 +10,7 @@ const MONCASH_NUMBER = "+509 3497 9011";
 const GAMES = {
   freefire: {
     name: "Free Fire",
+    currency: "Goud",
     packs: [
       { label: "100 + 10 bonus",   amount: "110 💎",   price: 150 },
       { label: "200 + 20 bonus",   amount: "220 💎",   price: 330 },
@@ -30,6 +31,7 @@ const GAMES = {
   },
   efootball: {
     name: "eFootball",
+    currency: "HTG",
     packs: [
       { label: "130 Coins",    amount: "130 🪙",    price: 200 },
       { label: "300 Coins",    amount: "300 🪙",    price: 445 },

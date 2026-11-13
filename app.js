@@ -2,7 +2,7 @@
 const currentGame = document.body.dataset.game || null;
 let selected = null;
 
-function fmt(n){ return n.toLocaleString("fr-FR").replace(/,/g," ") + " Goud"; }
+function fmt(n){ const g = currentGame ? GAMES[currentGame] : null; const cur = (g && g.currency) ? g.currency : "Goud"; return n.toLocaleString("fr-FR").replace(/,/g," ") + " " + cur; }
 
 function render(){
   if(!currentGame) return;
