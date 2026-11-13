@@ -68,8 +68,8 @@ h3{font-size:17px;font-weight:700;margin:22px 4px 10px}
 .faq summary::after{content:"›";color:var(--gray2);font-size:20px;font-weight:400}
 .faq p{color:var(--gray);font-size:15px;margin-top:8px}
 /* Paj peman */
-.pay-logo{background:#fff;border-radius:20px;padding:30px 20px;text-align:center}
-.pay-logo img{max-width:250px;width:80%;height:auto}
+.pay-logo{background:#fff;border-radius:20px;padding:0;overflow:hidden;text-align:center}
+.pay-logo img{width:100%;height:auto;display:block}
 .pay-logo .wordmark{font-size:44px;font-weight:800;color:#e4002b;letter-spacing:-1px}
 .pay-logo .wordmark small{display:block;font-size:14px;color:#666;font-weight:600;letter-spacing:2px;margin-top:4px}
 .pay-num{font-size:26px;font-weight:700;letter-spacing:.5px;text-align:center;margin:16px 0 6px}
@@ -93,3 +93,18 @@ footer b{color:var(--gray)}
 /* Bannyè imaj (akèy + paj jwèt yo) */
 .hero-banner{background:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.88)),url(Banny%C3%A8%20hero.jpg) center/cover;border-radius:24px;padding:28px 20px 24px;margin-top:16px}
 .game-banner{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:20px;margin-bottom:16px}
+
+/* Peman — Binance */
+.binance-card{background:var(--card);border-radius:20px;padding:24px 20px;text-align:center;border:1px solid rgba(240,185,11,.35)}
+.binance-logo{display:flex;align-items:center;justify-content:center;gap:10px;font-size:26px;font-weight:800;letter-spacing:-.5px}
+.binance-logo svg{width:30px;height:30px;flex:0 0 30px}
+.binance-name{color:var(--gray);font-size:15px;margin-top:8px}
+.binance-name b{color:var(--ink);font-size:17px}
+.verified{display:inline-block;background:rgba(48,209,88,.16);color:#30d158;font-size:13px;font-weight:700;padding:3px 12px;border-radius:999px;margin-top:10px}
+.pay-uid{font-size:24px;font-weight:700;letter-spacing:.5px;text-align:center;margin:14px 0 8px}
+.pay-uid small{display:block;font-size:12px;color:var(--gray);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:2px}
+/* Chwa mwayen peman (paj jwèt yo) */
+.pay-methods{display:flex;gap:8px;margin-bottom:14px}
+.pay-methods button{flex:1;padding:12px 8px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}
+.pay-methods button.sel{border-color:var(--blue);background:var(--blue-soft)}
+.pay-methods button small{display:block;font-weight:400;color:var(--gray);font-size:12px;margin-top:2px}
