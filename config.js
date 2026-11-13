@@ -8,6 +8,7 @@ const WHATSAPP_NUMBER = "18735972113";
 const MONCASH_NUMBER = "+509 3497 9011";
 const BINANCE_NAME = "andybazelais";
 const BINANCE_UID = "1253095098";
+const USDT_LINK = "https://app.binance.com/uni-qr/RKPDR3cs";
 
 const GAMES = {
   freefire: {

@@ -63,7 +63,7 @@ function orderWhatsApp(){
   if(!p || !id) return;
   const g = GAMES[currentGame];
   const packText = p.amount ? p.amount + " (" + p.label + ")" : p.label;
-  const payText = payMethod === "Binance" ? "Mwen pral peye sou Binance (UID: " + BINANCE_UID + ") epi mwen voye prèv la. Mèsi!" : "Mwen pral peye sou MonCash (" + MONCASH_NUMBER + ") epi mwen voye prèv la. Mèsi!";
+  const payText = payMethod === "Binance" ? "Mwen pral peye sou Binance (UID: " + BINANCE_UID + ") epi mwen voye prèv la. Mèsi!" : payMethod === "USDT" ? "Mwen pral peye an USDT sou Binance Pay epi mwen voye prèv la. Mèsi!" : "Mwen pral peye sou MonCash (" + MONCASH_NUMBER + ") epi mwen voye prèv la. Mèsi!";
   const msg = "Bonjou SWIFTT TOPUP! Mwen vle fè yon top-up:\n\nJwèt: " + g.name + "\nPakè: " + packText + "\nPri: " + fmt(p.price) + "\nPlayer ID mwen: " + id + "\nMwayen peman: " + payMethod + "\n\n" + payText;
   window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg), "_blank");
 }
@@ -84,6 +84,8 @@ function setPayMethod(m){
   const bn = document.getElementById("pm-binance");
   if(mc) mc.classList.toggle("sel", m === "MonCash");
   if(bn) bn.classList.toggle("sel", m === "Binance");
+  const us = document.getElementById("pm-usdt");
+  if(us) us.classList.toggle("sel", m === "USDT");
   updatePayLine();
   updateSummary();
 }
@@ -93,6 +95,8 @@ function updatePayLine(){
   if(!el) return;
   if(payMethod === "Binance"){
     el.innerHTML = 'Peman : <b>Binance — ' + BINANCE_NAME + '</b><br>UID : <b>' + BINANCE_UID + '</b><button class="copy" onclick="copyBinance(event)">Kopye</button><br>Voye prèv peman an nan konvèsasyon WhatsApp la.';
+  } else if(payMethod === "USDT"){
+    el.innerHTML = 'Peman : <b>USDT — Binance Pay</b><br>Eskane kòd QR a sou paj Peman an.<button class="copy" onclick="copyUSDT(event)">Kopye lyen an</button><br>Voye prèv peman an nan konvèsasyon WhatsApp la.';
   } else {
     el.innerHTML = 'Peman : <b>MonCash ' + MONCASH_NUMBER + '</b><button class="copy" onclick="copyMonCash(event)">Kopye</button><br>Voye prèv peman an nan konvèsasyon WhatsApp la.';
   }
@@ -110,3 +114,12 @@ function copyBinance(e){
 const pid = document.getElementById("player-id");
 if(pid) pid.addEventListener("input", updateSummary);
 render();
+
+function copyUSDT(e){
+  if(e) e.preventDefault();
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(USDT_LINK).then(() => {
+      if(e && e.target){ e.target.textContent = "Kopye \u2713"; setTimeout(() => { e.target.textContent = "Kopye lyen an"; }, 1500); }
+    });
+  }
+}

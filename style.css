@@ -107,3 +107,13 @@ footer b{color:var(--gray)}
 .pay-methods button{flex:1;padding:12px 8px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}
 .pay-methods button.sel{border-color:var(--blue);background:var(--blue-soft)}
 .pay-methods button small{display:block;font-weight:400;color:var(--gray);font-size:12px;margin-top:2px}
+
+/* Peman — USDT (Binance Pay) */
+.usdt-card{background:var(--card);border-radius:20px;padding:24px 20px;text-align:center;border:1px solid rgba(38,161,123,.4)}
+.usdt-logo{display:flex;align-items:center;justify-content:center;gap:10px;font-size:26px;font-weight:800;letter-spacing:-.5px}
+.usdt-logo .tether{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:#26a17b;color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800}
+.usdt-sub{color:var(--gray);font-size:15px;margin-top:8px}
+.qr-box{background:#fff;border-radius:16px;padding:12px;display:inline-block;margin-top:16px}
+.qr-box svg{display:block;width:200px;height:200px}
+.usdt-link{font-size:14px;color:var(--gray);word-break:break-all;margin-top:14px}
+.usdt-link a{color:var(--blue)}
