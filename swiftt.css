@@ -49,7 +49,7 @@ details{background:var(--s);border:1px solid var(--ln);border-radius:12px;paddin
 summary{cursor:pointer;font-weight:700}details p{margin-top:8px;color:var(--mu)}
 .ft{border-top:1px solid var(--ln);margin-top:30px;padding:26px 0}
 .ft .w{display:grid;gap:12px}.fl{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
-.fw{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 8px 24px #0008}
+.fw{position:fixed;right:16px;bottom:70px;z-index:30;box-shadow:0 8px 24px #0008}
 .lg p{margin-bottom:12px;color:var(--mu)}.lg b{color:var(--tx)}
 :focus-visible{outline:2px solid var(--gd);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
