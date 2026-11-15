@@ -1,0 +1,69 @@
+:root{--bg:#0b1030;--s:#141a42;--s2:#1f2760;--ln:#2b3470;--tx:#eef1ff;--mu:#a3abd6;--ac:#2f5bff;--ac2:#5b7fff;--gd:#ffbf3c;--wa:#25d366}
+*{box-sizing:border-box;margin:0}
+body{background:radial-gradient(800px 420px at 85% -8%,#2a37a066,transparent),var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;padding-bottom:90px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.w{max-width:980px;margin:auto;padding:0 18px}
+.mu{color:var(--mu)}.sm{font-size:.88rem}
+header{position:sticky;top:0;z-index:20;background:#0b1030ee;backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header .w{display:flex;align-items:center;gap:14px;height:58px}
+.logo{font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav a{padding:8px 12px;border-radius:10px;color:var(--mu);font-weight:600;font-size:.92rem;white-space:nowrap}
+nav a.on{background:var(--s2);color:var(--tx)}
+h1{font-size:clamp(2.1rem,8vw,3.6rem);line-height:1.04;letter-spacing:-.035em;font-weight:800}
+h2{font-size:1.3rem;letter-spacing:-.02em;margin-bottom:14px}
+section{padding:22px 0}
+.hero{padding-top:40px;padding-bottom:12px}
+.hero p{color:var(--mu);margin:14px 0 22px;max-width:520px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.b{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;border:1px solid transparent;background:var(--ac);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.b:hover{background:var(--ac2)}
+.b.o{background:transparent;border-color:var(--ln)}
+.b.g{background:var(--wa);color:#05230f}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.chip{border:1px solid var(--ln);border-radius:99px;padding:5px 12px;font-size:.85rem;color:var(--mu)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.sm2,.pks{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.card{display:block;background:var(--s);border:1px solid var(--ln);border-radius:18px;overflow:hidden}
+a.card:hover{border-color:var(--ac2)}
+.gc img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.in{padding:16px}
+.pr{color:var(--gd);font-weight:800}
+.st{list-style:none;padding:0;display:grid;gap:14px;counter-reset:n}
+.st li{counter-increment:n;display:grid;grid-template-columns:38px 1fr;column-gap:14px}
+.st li:before{content:counter(n);grid-row:span 2;width:38px;height:38px;border-radius:50%;background:var(--ac);display:grid;place-items:center;font-weight:800}
+.st span{color:var(--mu)}
+.tr{list-style:none;padding:0;display:grid;gap:10px;margin-bottom:16px}
+.tr li{border-left:3px solid var(--gd);padding:2px 0 2px 14px}.tr span{display:block;color:var(--mu)}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin:8px 0 16px}.stats b{display:block;font-size:2rem;color:var(--gd)}
+.gh{display:flex;gap:16px;align-items:center}.gh img{width:92px;height:92px;object-fit:cover;border-radius:16px}
+.pk{position:relative;text-align:left;background:var(--s);border:2px solid var(--ln);border-radius:14px;padding:14px;color:var(--tx);font:inherit;cursor:pointer;display:grid;gap:2px}
+.pk.sel{border-color:var(--ac2);background:var(--s2)}
+.pk i{position:absolute;top:-10px;right:10px;background:var(--gd);color:#2a1d00;font-style:normal;font-weight:800;font-size:.72rem;padding:2px 9px;border-radius:99px}
+.in2{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--ln);background:#0e1438;color:var(--tx);font:inherit}
+.ck{display:flex;gap:10px;margin:12px 0;color:var(--mu);font-size:.92rem}
+.er{color:#ff8a8a;min-height:1.4em;margin-top:8px}
+.num{font-size:1.7rem;font-weight:800;margin:10px 0}
+details{background:var(--s);border:1px solid var(--ln);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{margin-top:8px;color:var(--mu)}
+.ft{border-top:1px solid var(--ln);margin-top:30px;padding:26px 0}
+.ft .w{display:grid;gap:12px}.fl{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+.fw{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 8px 24px #0008}
+.lg p{margin-bottom:12px;color:var(--mu)}.lg b{color:var(--tx)}
+:focus-visible{outline:2px solid var(--gd);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+/* ---- Kat peman (MonCash / Binance / USDT) ---- */
+.paycard{background:var(--s);border:1px solid var(--ln);border-radius:18px;padding:20px;margin-bottom:14px}
+.paycard .label{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:12px}
+.mc-word{color:#ff2e4d;font-weight:800;font-size:1.6rem;line-height:1.1}
+.mc-word small{display:block;color:var(--mu);font-size:.72rem;letter-spacing:.22em;font-weight:600}
+.bn-word{color:#f0b90b;font-weight:800;font-size:1.6rem;display:flex;align-items:center;gap:10px}
+.bn-word svg{width:30px;height:30px;flex:none}
+.verified{display:inline-block;background:#12351f;color:#4ade80;border:1px solid #1f5c33;border-radius:99px;padding:2px 10px;font-size:.8rem;font-weight:700;margin:8px 0}
+.usdt-word{color:#26a17b;font-weight:800;font-size:1.6rem}
+.usdt-word .tether{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#26a17b;color:#fff;font-size:1.2rem;margin-right:8px;vertical-align:-6px}
+.qr-box{background:#fff;border-radius:14px;padding:10px;max-width:230px;margin:14px auto}
+.qr-box img{width:100%;height:auto}
+.usdt-link{word-break:break-all;text-align:center}
+.usdt-link a{color:var(--ac2);text-decoration:underline}
